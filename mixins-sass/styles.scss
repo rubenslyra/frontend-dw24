@@ -1,0 +1,61 @@
+// Mixin para estilos de botões
+
+@mixin button-styles($backgroung-color, $text-color) {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $backgroung-color;
+  color: $text-color;
+}
+
+// Estilos globais
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #f8ecec;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #f8ecec;
+}
+
+// Utilizando o Mixin para estilizar os botões
+
+.button {
+  @include button-styles(#3498db, #fff);
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken(#3498db, 10%);
+  }
+}
+
+.button-secondary {
+  @include button-styles(#e74c3c, #fff);
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken(#e74c3c, 10%);
+  }
+}
+
+// Adicionando transições suaves
+
+.button {
+  transition: background-color 0.3s ease-in-out;
+  // & - faz referência ao próprio elemento
+  &:hover {
+    background-color: darken(#3498db, 10%);
+  }
+}
