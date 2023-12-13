@@ -1,4 +1,6 @@
-**Projeto Desenvolvimento Web 24 - Mixins em HTML, CSS e SASS**
+# Projeto Desenvolvimento Web 24 - Mixins em HTML, CSS e SASS
+
+![Captura de tela 2023-12-12 231408](https://github.com/rubenslyra/frontend-dw24/assets/37023108/0d1ad985-73cc-461b-adce-5d9e6f47c207)
 
 ## Descrição
 
